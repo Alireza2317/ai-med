@@ -6,4 +6,4 @@ def get_class_distribution_info(df: pd.DataFrame, target_class) -> None:
 
 	print("Class Distribution:")
 	for cls, count, pct in zip(class_counts.index, class_counts.values, class_percentages.values):
-		print(f"Class {int(cls)}: {count} samples ({pct:.2f}%)")
+		print(f"Class {cls}: {count} samples ({pct:.2f}%)")
